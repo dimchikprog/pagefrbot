@@ -17,14 +17,15 @@
         let tg = window.Telegram.WebApp;
         let idField = document.querySelector("#divid")
         //userid.innerText = `${tg.initDataUnsafe.user.id}`;
-        idField.innerText = "5555555"
+        idField.innerText = "5555555";
         console.log(idField);
         
         eel.expose(get_user_id);
         function get_user_id(id){
-           console.log(id) 
+           console.log(id);
+           idField.innerText = id;
         }
-        
+        get_user_id("555551") 
     </script>
 </body>
 </html>
