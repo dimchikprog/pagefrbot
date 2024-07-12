@@ -9,11 +9,12 @@
 </head>
 <body>
     <div>ID: <b id="divid"></b></div>
-    <div>Name:</div>
-    <div>Birthday:</div>
+    <div>Name: <b id="divname"></b></div>
+    <div>Birthday: <b id="divbirth"></b></div>
     <script>
         let tg = window.Telegram.WebApp;
         let idField = document.querySelector("#divid")
+        let birthdayField = document.querySelector("#divbirth")
         //userid.innerText = `${tg.initDataUnsafe.user.id}`;
         console.log(idField);
         eel.expose(get_user_id);
