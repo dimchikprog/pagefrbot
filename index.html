@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webapp</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
     <script src="eel.js"></script>
-    
 </head>
 <body>
     <div>ID: <b id="divid"></b></div>
@@ -18,15 +16,12 @@
         let idField = document.querySelector("#divid")
         let birthdayField = document.querySelector("#divbirth")
         //userid.innerText = `${tg.initDataUnsafe.user.id}`;
-        
-        console.log(idField);
-        
-        
+        eel.expose(get_user_id);
         function get_user_id(id){
-           console.log(id);
-           idField.innerText = id;
+            idField.innerText = id
+            console.log(idField);
         }
-        get_user_id("555551") 
+        
     </script>
 </body>
 </html>
